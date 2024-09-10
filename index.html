@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+    -->
+</head>
+<body>
+    <!--CSS Background
+    
+        The CSS background properties are used to add background effects for
+        element.
+
+        In these lessons, you will learn about the following CSS background
+        properties:
+
+        .background-color
+        .background-image
+        .background-repeat
+        .background-attachment
+        .background-position
+        .background (shorthand property)
+    -->
+
+    <!--CSS background-color
+    
+        The background-color property specifies the background color of an element.
+    -->
+<h1>Hello There!</h1>
+
+<p>This page has a light blue background color!</p>
+
+<hr>
+
+<!--With CSS, a color is most often specified by:
+
+    . a valid color name - like "red"
+    . a HEX value - like "#ff0000"
+    . an RGB value - link "rpg(255,0,0)"
+-->
+
+<!--Other Elements
+
+    You can set the background color for any HTML elements:
+
+    Here, the <h1>, <p>, and <div> elements will have different background
+    colors:
+    h1 {
+        background-color: green;
+    }
+
+    div {
+        background-color: lightblue;
+    }
+
+    p {
+        background-color: yellow;
+    }
+-->
+
+<!--opacity / Transparency 
+
+    The opacity property specifies the opacity/transparency of an element. It
+    can take a value form 0.0 - 1.0. The lower value, the more transparent:
+-->
+
+<h1>Transparent Boxes</h1>
+
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first">
+  <h1>opacity 0.1</h1>
+</div>
+
+<div class="second">
+  <h1>opacity 0.3</h1>
+</div>
+
+<div class="third">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div>
+  <h1>opacity 1 (default)</h1>
+</div>
+
+<hr>
+
+<!--Note: When using the opacity property to add transparency to the
+    backgroun of an element, all of its child elements inherit the same
+    transparency. This can make the text inside a fully transparent element hard
+    to read.
+-->
+
+<!--Transparency using RGBA
+
+    If you do not want to apply apacity to child elements, like in our example
+    above, use RGBA color values. The following example sets the opacity for
+    the background color and not the text:
+
+    An RGBA color value is specified with: rgba(red, green, blue, alpha). The
+    alpha parameter is a number between 0.0 (fully trasparent) and 1.0 (fully
+    opaque).
+-->
+
+<h1>Transparent Boxes 2</h1>
+
+<p>Result with opacity:</p>
+
+<div style="opacity:0.1;">
+  <h1>10% opacity</h1>
+</div>
+
+<div style="opacity:0.3;">
+  <h1>30% opacity</h1>
+</div>
+
+<div style="opacity:0.6;">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>opacity 1</h1>
+</div>
+
+<p>Result with rgba():</p>
+
+<div class="first">
+  <h1>10% opacity</h1>
+</div>
+
+<div class="second">
+  <h1>30% opacity</h1>
+</div>
+
+<div class="third">
+  <h1>60% opacity</h1>
+</div>
+
+<div>
+  <h1>default</h1>
+</div>
+
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+</body>
+</html>
